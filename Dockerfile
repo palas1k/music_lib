@@ -6,9 +6,9 @@ RUN apk add postgresql-client build-base postgresql-dev
 
 RUN pip install -r /temp/requirements.txt
 
-RUN adduser --disabled-password testuser
+#RUN adduser --disabled-password testuser
 COPY config /config
 WORKDIR /config
 EXPOSE 8000
 
-USER testuser
+#USER testuser
